@@ -1,4 +1,34 @@
-case 'test':
+			case 'test':
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7800000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7740000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7680000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7620000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7560000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7500000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7440000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7380000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7320000)
+					setTimeout( () => {
+					client.sendMessage(from, 'Active', text)
+					}, 7260000)
 					setTimeout( () => {
 					client.sendMessage(from, 'Active', text)
 					}, 7200000)
