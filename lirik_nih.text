@@ -1,0 +1,27 @@
+{
+  "title":"Faded",
+  "author":"Alan Walker",
+  "lyrics":"You were the shadow to my light\nDid you feel us?\nAnother star, you fade away\nAfraid our aim is out of sight\nWanna see us alight\nWhere are you now?\nWhere are you now?\nWhere are you now?\nWas it all in my fantasy?\nWhere are you now?\nWere you only imaginary?\nWhere are you now?\nAtlantis, under the sea, under the sea\nWhere are you now? Another dream\nThe monster's running wild inside of me\nI'm faded, I'm faded\nSo lost, I'm faded, I'm faded\nSo lost, I'm faded\nThese shallow waters never met what I needed\nI'm letting go, a deeper dive\nEternal silence of the sea\nI'm breathing, alive\nWhere are you now?\nWhere are you now?\nUnder the bright but faded lights\nYou set my heart on fire\nWhere are you now?\nWhere are you now?\nWhere are you now?\nAtlantis, under the sea, under the sea\nWhere are you now? Another dream\nThe monster's running wild inside of me\nI'm faded, I'm faded\nSo lost, I'm faded, I'm faded\nSo lost, I'm faded ",
+  "thumbnail":{
+         "genius":"https://images.genius.com/708aef5551c9f670205b5cab3f38c8bd.300x300x1.jpg"
+          },
+   "links":{
+         "genius":"https://genius.com/Alan-walker-faded-lyrics"
+          }
+}
+
+
+			case 'lirik':
+				if (!isRegistered) return reply(ind.noregis())
+				if (!isGroup) return  reply('Command ini tidak bisa digunakan di pribadi!\n\n*Harap gunakan di group!*')
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('Maaf, aine telah membanned mu!\nHarap meningkatkan premium untuk terbebas banned selama anda premium!')
+				if (args.length < 1) return reply('Lirik lagunya mana kak?')
+				liriknyee = body.slice(7)
+				anu = await fetchJson(`https://some-random-api.ml/lyrics?title=${liriknyee}`, {method: 'get'})
+			  lyrics = Judul : ${anu.title}\nArtis : ${anu.author}\n\nLirik :\n${anu.lyrics}
+        buffer = await getBuffer(anu.thumbnail.genius)
+        client.sendMessage(from, buffer, image, {quoted: mek, caption: lyrics})
+				await limitAdd(sender)
+				console.log(color('[COMMAND]', 'blue'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(pushname, 'cyan'), color('Number:', 'yellow'), color(sender.split('@')[0], 'cyan'))
+			break
