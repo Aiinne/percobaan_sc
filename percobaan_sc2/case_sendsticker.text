@@ -1,0 +1,5 @@
+case 'test':
+			if (isBanned) return
+                  let tagstick = fs.readFileSync('src/tag.webp') 
+	          client.sendMessage(from, tagstick, MessageType.sticker, cr)
+break
