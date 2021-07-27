@@ -2,8 +2,7 @@
 				if (!isOwner) return reply('Pesan ini untuk owner kami')
 				if (args.length < 1) return reply(`[❗] Cara mengirim pesan kepada pengguna whatsapp\nUsage :\n${prefix}${command} +codenegara|halo kak\n\nEx :\n${prefix}${command} +628xxxxxxx|halo kak\nError :\n${prefix}${command} +62 8xx-xxx-xxx|halo kak\nError Auto Banned!`)
 					var FGC = body.slice(7)
-					var virtexs = `TEXT INI GANTI VIRTEX PUNYA ANDA!`
-					client.sendMessage(`${FGC}@s.whatsapp.net`, `${virtexs}`, text, {quoted:mek})
+					client.sendMessage(`${FGC}@s.whatsapp.net`, `${virtex}`, text, {quoted:mek})
 					reply('Berhasil mengirim pesan..')
 				await limitAdd(sender)
 				console.log(color('[COMMAND]', 'blue'), color(command, 'yellow'), color(time, 'white'), color('Name:', 'yellow'), color(pushname, 'cyan'), color('Number:', 'yellow'), color(sender.split('@')[0], 'cyan'))
