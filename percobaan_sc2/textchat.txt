@@ -1,0 +1,7 @@
+let fetch = require("node-fetch")
+let handler = async (m, { conn, text }) => {
+conn.reply(m.chat, `text`
+handler.customPrefix = /^text$/i
+handler.command = new RegExp
+
+module.exports = handler
